@@ -22,10 +22,10 @@ Signup user: POST {displayNem: 'teste', email: 'test@test.com', password: 'teste
 Login user: POST {email: 'test@test.com', password: 'teste'} http://localhost:3000/auth/login
 Get user logged info: http://localhost:3000/api/me
 
-## client-angular1_4
+## client-angular1_X
 
-### Running client-angular1_4
-Just open index.html file locate in client-angular1_4 folder 
+### Running client-angular1_X
+Just open index.html file locate in client-angular1_X folder 
 Using Firefox to avoid local files with cors errors on Chrome
 Or run on server (node, apache)
 
