@@ -39,6 +39,25 @@ angular.module('starter.controllers', [])
 
     };
 
+    $scope.authenticate = function(provider) {
+      $auth.authenticate(provider)
+        .then(function() {
+          console.log('You have successfully signed in with ' + provider + '!');
+          $state.go('tab.home');
+        })
+        .catch(function(error) {
+          if (error.message) {
+            // Satellizer promise reject error.
+            console.error(error.message);
+          } else if (error.data) {
+            // HTTP response error from server
+            console.error(error.data.message, error.status);
+          } else {
+            console.error(error);
+          }
+        });
+    };
+
     $scope.logout = function() {
       $auth.logout();
       $state.go('login');
