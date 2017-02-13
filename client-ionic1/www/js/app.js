@@ -44,11 +44,11 @@ app.config(function ($authProvider){
    $authProvider.storageType = 'localStorage';
 
    $authProvider.facebook({
-      clientId: '356380404709627',
+      clientId: '1673859926247382',
       url: 'http://192.168.1.103:3000/auth/facebook'
     });
     $authProvider.google({
-       clientId: 'CLIENT_ID_KEY',
+       clientId: '262858903544-7gj2s4eu3saa6kdt0s2smt4pr0a6863a.apps.googleusercontent.com',
        url: 'http://192.168.1.103:3000/auth/google'
      });
 });
